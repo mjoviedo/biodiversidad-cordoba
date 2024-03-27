@@ -1,0 +1,79 @@
+h1, h2, h3, h4, h5, h6, .navbar-brand{
+    font-family: 'Raleway';
+}
+
+.navbar-brand{
+    font-weight: 900;
+}
+
+.logos img{
+    object-fit: contain;
+    mix-blend-mode: color-burn; 
+}
+
+/* FONDO DE COLORES ANIMADO */
+
+.bg-animada {
+	background: linear-gradient(-45deg, #D45C5D, #e73c7e, #3598D8, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+/* RESALTADO DE TEXTO */
+
+.resaltado {
+    background-color: #fafa0077;
+    padding: 0.2em;
+  }
+
+
+/* BARRA DE PROGRESO */
+
+.barra-scroll {
+  height: 8px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  background-color: #116b23;
+  width: 100%;
+  scale: 1 1;
+  transform-origin: left;
+  animation: barra-scroll linear;
+  animation-timeline: scroll();
+}
+
+
+.progress {
+  height: 8px;
+  background: #116b23;
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform-origin: 0 50%;
+  animation: scaleProgress auto linear;
+  animation-timeline: scroll(root);
+}
+
+@keyframes scaleProgress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
