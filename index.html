@@ -56,7 +56,7 @@
           <div class="col-sm-7" style="margin: auto;">
             <p class="h1 my-5">Biodiversidad en la Provincia de Córdoba</p>
             <p class="fs-4 my-4">PRIMER Y SEGUNDO CICLO DEL NIVEL PRIMARIO</p>
-            <p class="fs-5">Ciencias Naturales y Tecnología</p>
+            <p class="fs-5">Ciencias Naturales y Tecnología  <i class="fas fa-door-open me-2"></i></p>
             <br>
             <hr>
           </div>
@@ -67,16 +67,17 @@
     <div style="height: 10vh;"></div>
     
 
-    <div id="presentacion" class="jumbotron d-flex align-items-center min-vh-100 p-2">
+    <div id="presentacion" class="jumbotron d-flex align-items-center min-vh-100 p-2" style="background-color: rgb(240, 240, 232);">
         <div class="container-fluid" >
           <div class="row">
             <div class="col-sm-7" style="margin: auto;">
-              <p class="h4 my-2">Presentación</p>
+         
+              <p class="h4 my-5">Presentación</p>
               <p>
                 Una recomendación didáctica es un material que ponemos a disposición en Hacemos Escuela donde recuperamos, organizamos y secuenciamos recursos producidos y publicados en diferentes plataformas digitales. Dicha selección está acompañada por algunas consideraciones acerca de las posibles apropiaciones que cada docente puede llevar a cabo, considerando los contenidos del Diseño Curricular previstos para diversas asignaturas, grados o cursos y niveles.
                 </p>
                 <p>
-                En particular, esta recomendación didáctica ofrece una organización posible de un conjunto de recursos para la enseñanza disponibles en el repositorio digital de la Secretaría de Ciencia y Tecnología de la Universidad Nacional de Córdoba.
+                En particular, esta recomendación didáctica ofrece una organización posible de un conjunto de recursos para la enseñanza disponibles en el <a href="https://rdu.unc.edu.ar/handle/11086/546542" target="_blank">repositorio digital de la Secretaría de Ciencia y Tecnología</a> de la Universidad Nacional de Córdoba.
               </p>
               <p>Los materiales fueron seleccionados a partir de dos criterios. En primer lugar, se trata de recursos que pueden considerarse para elaborar propuestas para la enseñanza de Ciencias Naturales en el nivel Primario. Si bien presentan una complejidad propia del Segundo Ciclo, podrían adaptarse o adecuarse para ser utilizados también en el Primer Ciclo. En segundo lugar, las propuestas abordan distintos aspectos de la biodiversidad presente en la provincia de Córdoba. </p>
               <p>
@@ -105,7 +106,7 @@
         </div>
   
 <!-- ESPECIES -->
-<div id="especies" class="jumbotron d-flex align-items-center min-vh-100 p-2" style="background-color: beige;">
+<div id="especies" class="jumbotron d-flex align-items-center min-vh-100 p-2">
     <div class="container-fluid" >
       <div class="row">
         <div class="col-sm-8" style="margin: auto;">
@@ -117,16 +118,38 @@
             <img src="img/chanchomoro.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Chancho moro</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="small detalles"><strong>Categoría:</strong> fauna, mamíferos</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+              <li class="list-group-item"><p class="card-text">¿Alguna vez escuchaste hablar del Chancho Moro o Quimilero?</p></li>
+              <li class="list-group-item text-center"> 
+                <a class="tooltip-test" title="Tooltip"><i class="fas fa-video me-2 verde"></i></a>
+                <a class="tooltip-test" title="Tooltip"><i class="fas fa-images me-2 verde"></i></a>
+                <button type="button" class="btn btn-verde" data-bs-toggle="modal" data-bs-target="#tarjeta1">
+                  Acceder
+                </button>
+              </li>
             </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+          </div>
+
+          <!-- Modal tarjeta 1 -->
+          <div class="modal fade" id="tarjeta1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Chancho moro</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h4>Descripción</h4>
+                  <p>
+                    Estos recursos didácticos permiten caracterizar y reconocer a dos especies de mamíferos silvestres de la familia del chancho y el jabalí, muy importantes para la ecorregión del Chaco seco que se pueden encontrar en la provincia de Córdoba. Se trata del pecarí de collar y el chancho quimilero. Su estudio puede colaborar en la construcción de una red trófica de las especies cordobesas.
+                  </p> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-verde" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
             </div>
           </div>
 

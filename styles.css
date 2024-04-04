@@ -11,25 +11,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand{
     mix-blend-mode: color-burn; 
 }
 
-/* FONDO DE COLORES ANIMADO */
-
-.bg-animada {
-	background: linear-gradient(-45deg, #D45C5D, #e73c7e, #3598D8, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 
 /* RESALTADO DE TEXTO */
@@ -39,6 +20,26 @@ h1, h2, h3, h4, h5, h6, .navbar-brand{
     padding: 0.2em;
   }
 
+a  {
+  color: #5f9877;
+}
+
+.verde  {
+  color: #5f9877;
+}
+.btn-verde  {
+  background-color: #5f9877;
+  color: white;
+}
+.btn-verde:hover  {
+  background-color: #528065;
+  color: white;
+}
+
+.detalles {
+  color: #696969;
+  font-style: italic;
+}
 
 /* BARRA DE PROGRESO */
 
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand{
   position: fixed;
   bottom: 0;
   z-index: 1000;
-  background-color: #116b23;
+  background-color: #5f9877;
   width: 100%;
   scale: 1 1;
   transform-origin: left;
@@ -58,10 +59,10 @@ h1, h2, h3, h4, h5, h6, .navbar-brand{
 
 .progress {
   height: 8px;
-  background: #116b23;
+  background: #5f9877;
   position: fixed;
   z-index: 1000;
-  bottom: 0;
+  top: 60;
   left: 0;
   width: 100%;
   transform-origin: 0 50%;
